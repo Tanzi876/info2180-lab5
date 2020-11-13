@@ -35,7 +35,7 @@ if($context == 'cities' ){
       <th>Head of State</th>
     </thead>
     <tbody>
-      <?php foreach($row as $row): ?>
+      <?php foreach($result as $row): ?>
         <tr>
           <td> <?=$row['name']?></td>
           <td> <?=$row['continent']?></td>
@@ -53,7 +53,7 @@ if($context == 'cities' ){
             <th>Population</th>
           </thead>
           <tbody>
-            <?php foreach($row as $row): ?>
+            <?php foreach($result as $row): ?>
               <tr>
                 <td> <?=$row['name']?></td>
                 <td> <?=$row['district']?></td>
