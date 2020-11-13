@@ -1,4 +1,4 @@
-/*window.onload=*/function(){
+window.onload=function(){
     let country_search=document.getElementById('lookup_countries')
     let city_search=document.getElementById('lookup_cities')
     let request=new XMLHttpRequest()
