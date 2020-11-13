@@ -7,7 +7,7 @@ window.onload=function(){
 
     if (query==""){
         let url= "world.php?all=true"
-        request.open('GET',url)
+        request.open('GET',url,true)
         request.send()
 
     }
