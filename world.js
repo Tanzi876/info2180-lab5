@@ -3,6 +3,14 @@ window.onload=function(){
     let city_search=document.getElementById('lookup_cities')
     let request=new XMLHttpRequest()
     let result=document.getElementById('result')
+    let query=document.getElementById('country')
+
+    if (query==""){
+        let url= "world.php?all=true"
+        request.open('GET',url)
+        request.send()
+
+    }
     
     country_search.onclick=function(){
         let search=document.getElementById("country").value
