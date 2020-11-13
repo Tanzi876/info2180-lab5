@@ -6,7 +6,7 @@ window.onload=function(){
     
     country_search.onclick=function(){
         let search=document.getElementById("country").value
-        let url= 'http://localhost/info2180-lab5/world.php?country='+search+"&context=country"
+        let url= 'world.php?country='+search+"&context=country"
         request.open('GET',url)
         request.send()
         request.onload=function(){
@@ -20,7 +20,7 @@ window.onload=function(){
     }
     city_search.onclick=function(){
         let search=document.getElementById("country").value
-        let url= 'http://localhost/info2180-lab5/world.php?country='+search+"&context=cities"
+        let url= 'world.php?country='+search+"&context=cities"
         request.open('GET',url)
         request.send()
         request.onload=function(){
