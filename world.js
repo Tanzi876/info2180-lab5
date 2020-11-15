@@ -6,8 +6,8 @@ window.onload=function(){
     let query=document.getElementById('country')
 
     if (query==""){
-        let url= "world.php?all=true"
-        request.open('GET',url,true)
+        let url= "world.php?all"
+        request.open('GET',url)
         request.send()
 
     }
